@@ -19,3 +19,16 @@ function makeBlue() {
 document.getElementById('make-pink').addEventListener('click', function () {
     document.body.style.backgroundColor = 'pink';
 })
+
+
+document.getElementById('btn-text').addEventListener('click', function () {
+    const inputField = document.getElementById('input');
+    const inputText = inputField.value;
+
+    const outPut = document.getElementById('output');
+
+    outPut.innerText = inputText;
+    inputField.value = '';
+
+
+})

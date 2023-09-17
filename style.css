@@ -1,0 +1,13 @@
+body {
+    background-color: aliceblue;
+}
+
+.welcome {
+    border: 5px solid;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    /* background-position: 5px; */
+    text-shadow: 10px;
+
+}

@@ -1,12 +1,24 @@
-function radianToDegree(radian) {
-    if (typeof radian == "number") {
-        let degree = radian * (180 / Math.PI);
-        let degrees = degree.toFixed(2);
-        return degrees;
+// function radianToDegree(radian) {
+//     if (typeof radian == "number") {
+//         let degree = radian * (180 / Math.PI);
+//         let degrees = degree.toFixed(2);
+//         return degrees;
+//     }
+//     else {
+//         return " Error Input! Please Give Number type value.";
+//     }
+// }
+// let result = radianToDegree(14);
+// console.log(result);
+
+function isJavaScriptFile(string) {
+    if (typeof string == "string") {
+        const doseExist = string.endsWith(".js");
+        return doseExist;
     }
     else {
-        return " Error Input! Please Give Number type value.";
+        return "Error Input ! Please Give String type Value.";
     }
 }
-let result = radianToDegree(14);
+const result = isJavaScriptFile("hello.java");
 console.log(result);
